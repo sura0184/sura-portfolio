@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Concert+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+NZ:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sura | Potfolio</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <h1><a href="./index.html">Sura</a></h1>
+        </div>
+        <ul id="menulist">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #ffe161;" onclick="toggleMenu()"></i>
+        </div>
+
+        <script>
+            let menulist = document.getElementById("menulist")
+            menulist.style.maxHeight = "0px";
+
+            function toggleMenu() {
+                if (menulist.style.maxHeight == "0px") {
+
+                    menulist.style.maxHeight = "300px";
+
+                } else {
+
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </nav>
+
+
+    <!-- profile -->
+    <div class="profile">
+        <img src="./image/back.jpg" alt="" class="back">
+        <div class="container">
+            <div class="me">
+                <h1 style="color: white;">Hi,</h1>
+                <h1>I'm Shad Shamal</h1>
+                <p>Backend Developer & Database Enginree</p>
+
+                <button type="submit" class="contact-btn"><a href="#contact">Contact Me</a></button>
+                <button type="submit" class="project-btn"><a href="#projects">View Projects</a></button>
+
+            </div>
+            <div class="pro"></div>
+        </div>
+        <div class="circle"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+
+
+    <!-- about -->
+    <div class="about-me" id="about">
+        <div class="about-pro">
+
+        </div>
+        <h1>About <span>Me</span></h1>
+        <div class="about-text">
+            <h2>I'm Sura, a Backend Developer & Database Engineer</h2>
+            <p><span>Age:</span> 21</p>
+            <p><span>Education:</span> Computer Science Student at University of Sulaimany (Stage 3)</p>
+            <p><span>Location:</span> Sulaimany, Kurdistan</p>
+            <p><span>Focus:</span> Backend Development & Database Engineering</p>
+            <p class="detail">Currently pursuing my degree at the University of Sulaimany, I combine academic knowledge
+                with practical <br> experience to deliver robust solutions. My expertise spans multiple programming
+                languages and database <br> technologies, allowing me to adapt to various project requirements.</p>
+        </div>
+    </div>
+
+
+    <!-- Skills -->
+    <div class="skills" id="skills">
+        <h1>My <span>Skills</span></h1>
+        <div class="skills-card">
+            <i class="fa-solid fa-code fa-lg"></i>
+            <h2>Frontend</h2>
+            <div class="skills-container">
+                <div class="skills-name">
+                    <p>HTML</p>
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="skills-name">
+                    <p>CSS</p>
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="skills-name">
+                    <p>JavaScript</p>
+                    <i class='bx bxs-file-js'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Bootstrap</p>
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <div class="skills-name">
+                    <p>Tailwind</p>
+                    <i class='bx bxl-tailwind-css'></i>
+                </div>
+                <div class="skills-name">
+                    <p>React</p>
+                    <i class='bx bxl-react'></i>
+                </div>
+            </div>
+        </div>
+        <div class="skills-card">
+            <i class="fa-solid fa-server fa-lg"></i>
+            <h2> Backend</h2>
+            <div class="skills-container">
+                <div class="skills-name">
+                    <p>PHP</p>
+                    <i class='bx bxl-php'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Laravel</p>
+                    <i class="fa-brands fa-laravel"></i>
+                </div>
+                <div class="skills-name">
+                    <p>Python</p>
+                    <i class='bx bxl-python'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Django</p>
+                    <i class='bx bxl-django'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Flask</p>
+                    <i class='bx bxl-flask'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Node.js</p>
+                    <i class='bx bxl-nodejs'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Server Logic</p>
+                    <i class='bx bx-server'></i>
+                </div>
+                <div class="skills-name">
+                    <p>C#</p>
+                    <i class="fa-solid fa-c"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="skills-card">
+            <i class="fa-solid fa-database fa-lg"></i>
+            <h2>Database Engineering</h2>
+            <div class="skills-container">
+                <div class="skills-name">
+                    <p>MySQL</p>
+                    <i class='bx bx-data'></i>
+                </div>
+                <div class="skills-name">
+                    <p>PostgreSQL</p>
+                    <i class='bx bxl-postgresql'></i>
+                </div>
+                <div class="skills-name">
+                    <p>NoSQL</p>
+                    <i class='bx bxl-mongodb'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Firebase</p>
+                    <i class='bx bxl-firebase'></i>
+                </div>
+                <div class="skills-name">
+                    <p>SQL server</p>
+                </div>
+                <div class="skills-name">
+                    <p>MariaDB</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="skills-card">
+            <i class="fa-solid fa-code-branch fa-lg"></i>
+            <h2>Tools / Others</h2>
+            <div class="skills-container">
+                <div class="skills-name">
+                    <p>Git</p>
+                    <i class='bx bxl-git'></i>
+                </div>
+                <div class="skills-name">
+                    <p>GitHub</p>
+                    <i class='bx bxl-github'></i>
+                </div>
+                <div class="skills-name">
+                    <p>VS Code</p>
+                    <i class='bx bxl-visual-studio'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Electron.js</p>
+                    <i class='bx bxs-file-js'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Docker</p>
+                    <i class='bx bxl-docker'></i>
+                </div>
+                <div class="skills-name">
+                    <p>Netlify</p>
+                    <i class='bx bxl-netlify'></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- project -->
+    <div class="projects" id="projects">
+        <h1>My <span>Projects</span></h1>
+        <div class="project-card">
+            <div class="project-hover">
+                <h2>Used Ones</h2>
+                <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>Tailwind</p>
+                </div>
+            </div>
+            <div class="project-image">
+
+            </div>
+            <div class="project-text">
+                <h2>GodFather Game</h2>
+                <p>
+                    A strategic game inspired by the mafia world, featuring complex decision-making and resource
+                    management systems.
+                </p>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-hover">
+                <h2>Used Ones</h2>
+                <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Bootstrap</p>
+                    <p>Tailwind</p>
+                    <p>Node.js</p>
+                    <p>PHP</p>
+                    <p>Python</p>
+                    <p>Laravel</p>
+                    <p>Django</p>
+                    <p>MySQL</p>
+                    <p>PostgreSQL</p>
+                    <p>MongoDB</p>
+
+                </div>
+            </div>
+
+            <div class="project-image2">
+
+            </div>
+            <div class="project-text">
+                <h2>Cashier system</h2>
+                <p>
+                    A comprehensive point-of-sale system with inventory management, sales tracking, and reporting
+                    features.
+                </p>
+            </div>
+
+        </div>
+        <div class="project-card">
+            <div class="project-hover">
+                <h2>Used Ones</h2>
+                <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Bootstrap</p>
+                    <p>Tailwind</p>
+                    <p>Node.js</p>
+                    <p>PHP</p>
+                    <p>Python</p>
+                    <p>Laravel</p>
+                    <p>Flask</p>
+                    <p>MySQL</p>
+                    <p>PostgreSQL</p>
+                    <p>MongoDB</p>
+                </div>
+            </div>
+
+            <div class="project-image3">
+
+            </div>
+            <div class="project-text">
+                <h2>Pharmacy system</h2>
+                <p>
+                    A complete pharmacy management solution with drug inventory, prescription tracking, and patient
+                    records.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <h1>Contact <span>Me</span></h1>
+        <div class="contact-form">
+            <div class="contact-part">
+                <div class="contact-part-holder">
+                    <h2>Contact Information</h2>
+                    <a href="mailto:shadshamal170@gmail.com"><i class='bx bx-envelope'></i> shadshamal170@gmail.com</a>
+                    <a href="tel:07700853737"><i class='bx bx-phone'></i> +964 770 085 3737</a>
+                    <a href="https://maps.app.goo.gl/oD4Lrbna1zLXExzY6"><i class='bx bxs-map'></i> Kurdistan,
+                        Sulaimany</a>
+                    <div class="social-icon">
+                        <a href="https://github.com/sura0184"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.facebook.com/shad.shamal.75"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/swraa_____/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href=""><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="form-part">
+                    <div class="inputbox">
+                        <input type="text" name="name" required="required">
+                        <span>Your Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" name="email" required="required">
+                        <span>Your e-mail</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="subject" required="required">
+                        <span>subject</span>
+                    </div>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="xom">
+            <h3>Sura</h3>
+            <p>Backend Developer & Database Engineer</p>
+        </div>
+        <div class="parts">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2025 Sura | Portfolio. All rights reserved.</p>
+    </div>
+
+
+
+
+</body>
+
+</html>
